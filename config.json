@@ -1,0 +1,9 @@
+{
+    "database":{
+        "url":""
+    },
+    "jwt":{
+        "secret_token":"a6bd7e60eeb1ec07d0bce88c1f64a6bc20253e275d5ededeea72c532f295e333d5a270285bbb357e39bcbea66f7d669f2d7474cf351e8790af540bb54af835db",
+        "secret_refresh_token":"a49d92315ad433b6faeb7cab4e63374bc6f517e42f52641a01f75c84a723e8e8c84f0976a93295d8749119b6593a2d50781d0b40e574c4c87a3198d08c1cf457"
+    }
+}
