@@ -4,6 +4,7 @@ const configInfos = require('../../config.json')
 class AuthController{
 
     login(req,res){
+        console.log("login")
         let acessToken = jwt.sign({username:"username"},configInfos.jwt.secret_token);
         res.json({acess_token:acessToken});
     }

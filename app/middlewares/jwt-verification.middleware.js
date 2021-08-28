@@ -15,11 +15,4 @@ module.exports = (req,res,next) =>{
         next();
     });
 
-
-    //on recup le jwt 
-    // On verifie si il est valide
-    // Si oui:
-    //   - next
-    // Si non: 
-    //   - 403 error
 }

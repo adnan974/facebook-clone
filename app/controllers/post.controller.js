@@ -18,8 +18,6 @@ class PostController{
         return res.send('delete post');
     }
 
-
-
 }
 
 module.exports = new PostController();

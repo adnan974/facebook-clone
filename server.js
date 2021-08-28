@@ -4,8 +4,9 @@ const router = require('./app/routes');
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 const authRouter = require('./app/routes/auth')
+const cors = require('cors')
 
-
+app.use(cors());
 app.use(bodyParser.json());
 
 // -- Db connection
