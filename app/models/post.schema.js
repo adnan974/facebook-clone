@@ -11,11 +11,14 @@ const postSchema = new mongoose.Schema({
     },
     picture:{
         //todo
-        type:any,
         
     },
+    owner:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'User'
+    }
 
 })
 
 
-module.exports = mongoose.model('User',userSchema)
+module.exports = mongoose.model('Post',postSchema)

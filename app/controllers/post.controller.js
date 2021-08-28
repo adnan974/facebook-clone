@@ -1,9 +1,13 @@
-
+let  Post = require('../models/post.schema');
 
 class PostController{
 
-    getPosts(req,res){
-        return res.send('get posts');
+
+    async getPosts(req,res){
+        let posts = await Post.find();
+        console.log(posts);
+        return res.json(posts);
+      
     }
 
     getOnePost(req,res){
@@ -11,6 +15,14 @@ class PostController{
     }
 
     createPost(req,res){
+        try{
+            let post = new Post(req.body);
+            post.save();
+            res.json(post);
+        }
+        catch(err){
+
+        }
         return res.send('create post');
     }
 
